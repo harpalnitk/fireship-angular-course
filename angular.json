@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "fireship-angular-course:build:production",
+            "firebaseProject": "fireship-angular-course-53d37",
+            "firebaseHostingSite": "fireship-angular-course-53d37"
+          }
         }
       }
     }

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fireship-angular-course-53d37": {
+      "hosting": {
+        "fireship-angular-course": [
+          "fireship-angular-course-53d37"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fireship-angular-course-53d37"
+  }
+}
