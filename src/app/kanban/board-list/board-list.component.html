@@ -1,0 +1,24 @@
+  <!-- items can be dragged only horizontally 
+  cdkDropListOrientation="horizontal" -->
+<div
+  cdkDropList
+  cdkDropListOrientation="horizontal"
+  class="boards"
+  (cdkDropListDropped)="drop($event)"
+>
+  <app-board cdkDrag *ngFor="let board of boards" [board]="board">
+    <!-- board draggable only when dragged by handle  -->
+    <mat-icon cdkDragHandle class="handle">drag_indicator</mat-icon>
+  </app-board>
+
+  <div class="board-button">
+    <button
+      mat-raised-button
+      color="accent"
+      cdkDragDisabled
+      (click)="openBoardDialog()"
+    >
+      New Board
+    </button>
+  </div>
+</div>

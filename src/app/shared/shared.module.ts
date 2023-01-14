@@ -15,9 +15,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
+
 
 const components:any = [
-  ShellComponent
+  ShellComponent, DeleteButtonComponent,
 ];
 
 const modules = [
@@ -40,7 +42,6 @@ const modules = [
 @NgModule({
   declarations: [
     ...components,
-    
   ],
   imports: [
     ...modules,

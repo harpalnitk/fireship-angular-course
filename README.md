@@ -57,4 +57,17 @@ ng g c shared/shell --export --skip-tests true
 #component inside lazy loaded module
 > ng g c user/login-page --skip-tests true
 
+## changed this file in node modules
+https://github.com/angular/angularfire/issues/3290
+I installed @angular/fire with --force, then went to node_modules/@angular/fire/compat/firestore/interfaces.d.ts
+
+## entry components Dialog components
+
+entry compnents are deprecated
+
+ng g c kanban/dialogs/board-dialog --flat -t -s --skip-tests t-dialog --flat --entry-component --skip-tests true
+
+--flat tells to generate component without module directory
+and -t and -s flags are for inline template and inline styles
+
 
