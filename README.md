@@ -70,4 +70,10 @@ ng g c kanban/dialogs/board-dialog --flat -t -s --skip-tests t-dialog --flat --e
 --flat tells to generate component without module directory
 and -t and -s flags are for inline template and inline styles
 
+### To add angular universal to the project for SSR
+
+we will use nestjs
+
+> ng add @nestjs/ng-universal
+
 

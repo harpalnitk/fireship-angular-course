@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { tap } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { SeoService } from 'src/app/services/seo.service';
 
 import { Observable } from 'rxjs';
@@ -36,7 +36,10 @@ export class DetailPageComponent {
             title: cust.name,
             description: cust.bio,
             image: cust.image,
-          })
+          }),
+          //this map is used because if not used detail page is rendered
+          //before seo can set title, description and image
+          map(val=> val)
         )
       );
     // this.customer = this.data.getCustomer(this.customerId)
